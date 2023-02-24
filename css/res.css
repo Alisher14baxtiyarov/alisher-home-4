@@ -1,0 +1,141 @@
+@media only screen and (max-width:768px) {
+    .container{
+        max-width:100%;
+        margin: 0 auto;
+    }
+    .nav__logo a{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        padding: 4.8rem;
+        height: 150vh;
+        background-image: url(/img/hero-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .best__content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0rem;
+    }
+    .best__item h2{
+        color: #fff;
+        font-family: var(--ubuntu);
+        font-size: 2rem;
+        width: 50%;
+        margin-bottom: 0.5rem;
+    }
+    .best__item p{
+        width: 40%;
+    }
+    .best__item .img img{
+        width: 30%;
+    }
+    .about__content{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 3rem;
+    }
+    .about__item .img img{
+        width: 40%;
+    }
+    .about__item h2{
+        text-align: left;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .about__item p{
+        font-family: var(--ubuntu);
+        text-align: left;
+        font-size: 1.2rem;
+        width: 40%;
+        margin-bottom: 4rem;
+    }
+    .about__item input{
+        width: 33%;
+        height: 10%;
+        background-color: #6EBCA8;
+        color: #fff;
+        font-size: 1.5rem;
+        border: 0;
+        outline: 0;
+        margin-left: 0%;
+        border-radius: 15%;
+        transition: 0.8s;
+    }
+    .open__item .img img{
+        width: 40%;
+    }
+    .open__content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 3rem;
+    }
+    .open__item h2{
+        margin-top:9rem;
+        font-family: var(--ubuntu);
+        font-weight:600;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .open__item p{
+        font-family: var(--ubuntu);
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+        width: 40%;
+    }
+    
+.du{
+    width: 100%;
+    height: auto;
+    padding: 4.8rem;
+    background-color: whitesmoke;
+}
+.du .title h2{
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+.du__content{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.du__item h2{
+    margin-top: 0rem;
+    color: #FDD31D;
+    font-family: var(--ubuntu);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.du__item p{
+    font-family: var(--lato);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 40%;
+}
+
+.contact__content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 3rem;
+}
+.contact{
+    width: 100%;
+    height: auto;
+    padding: 4.8rem;
+}
+
+.contact__item input{
+    width: 45%;
+    height: 10%;
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+    border-top: 0px solid #000;
+    font-size: 1.4rem;
+    border-bottom: 3px solid black;
+    outline:none;
+}
+}

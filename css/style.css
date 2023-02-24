@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,600;1,500;1,600&family=Lato:ital,wght@0,400;1,100;1,300&family=Montserrat:ital,wght@0,300;0,400;1,200;1,300&family=Roboto:ital,wght@0,400;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;1,200&family=Ubuntu+Mono:ital,wght@1,400;1,700&family=Ubuntu:ital,wght@0,700;1,700&display=swap');
+
+:root{
+        --karla: 'Karla', sans-serif;
+        --lato: 'Lato', sans-serif;
+        --monster: 'Montserrat', sans-serif;
+        --roboto: 'Roboto', sans-serif;
+        --sanspro: 'Source Sans Pro', sans-serif;
+        --ubuntu: 'Ubuntu', sans-serif;
+        --mono: 'Ubuntu Mono', monospace;
+}
+
+.container{
+    max-width:90%;
+    margin: 0 auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.4;
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    padding: 40px;
+    background-color: #E8BF12;
+}
+.navbar{
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 0px;
+}
+.nav__logo a{
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family:var(--mono);
+    font-size: 25px;
+    transition: all 0.5s linear;
+}
+.nav__logo a:hover, a:focus {
+    color: black;
+}
+.banner{
+    width: 100%;
+    padding: 4.8rem;
+    height: 150vh;
+    background-image: url(/img/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.best__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.best__item h2{
+    color: #fff;
+    font-family: var(--ubuntu);
+    font-size: 3rem;
+    width: 80%;
+    margin-bottom: 0.5rem;
+}
+.best__item p{
+    color: #fff;
+    font-family: var(--ubuntu);
+    font-size: 1rem;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
+.best__item input{
+    width: 30%;
+    height:10%;
+    border: 0;
+    outline:none;
+    font-size: 1.2rem;    
+    transition: 0.8s;
+}
+.best__item input:hover{
+    background-color: #E8BF12;
+    color: #fff;
+}
+.about{
+    width: 100%;
+    padding: 4.8rem;
+}
+.about__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.about__item h2{
+    margin-top:9rem;
+    font-family: var(--ubuntu);
+    font-weight:600;
+    text-align: right;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.about__item p{
+    font-family: var(--ubuntu);
+    text-align: right;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+.about__item input{
+    width: 33%;
+    height: 10%;
+    background-color: #6EBCA8;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 0;
+    outline: 0;
+    margin-left: 70%;
+    border-radius: 15%;
+    transition: 0.8s;
+}
+.about__item input:hover{
+    border: 1px solid black;
+}
+.open__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+    .open__item h2{
+        margin-top:9rem;
+        font-family: var(--ubuntu);
+        font-weight:600;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .open__item p{
+        font-family: var(--ubuntu);
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+    }
+    .open__item input{
+        width: 33%;
+        height: 10%;
+        background-color: #FDD31D;
+        color: #fff;
+        font-size: 1.5rem;
+        border: 0;
+        outline: 0;
+        border-radius: 15%;
+        transition: 0.8s;
+    }
+.open__item input:hover{
+    border: 1px solid black;
+}
+.du{
+    width: 100%;
+    height: 80vh;
+    padding: 4.8rem;
+    background-color: whitesmoke;
+}
+.du .title h2{
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+.du__content{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.du__item h2{
+    margin-top: 5rem;
+    color: #FDD31D;
+    font-family: var(--ubuntu);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.du__item p{
+    font-family: var(--lato);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.contact{
+    width: 100%;
+    height: 90vh;
+    padding: 4.8rem;
+}
+.contact__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.contact__item h3{
+    color: black;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    font-family: var(--lato);
+}
+.contact__item input{
+    width: 90%;
+    height: 10%;
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+    border-top: 0px solid #000;
+    font-size: 1.4rem;
+    border-bottom: 3px solid black;
+    outline:none;
+}
+.contact__item input[type="submit"]{
+    background-color:#6BD1BD;
+    color: #fff;
+    border: 0;
+    width: 33%;
+    border-radius: 100px;
+    transition: 0.8s;
+}
+.contact__item input[type="submit"]:hover{
+    background-color: #000;
+    color: #fff;
+}
+.fanadesh{
+    width: 100%;
+    height: 75vh;
+    padding: 4.8rem;
+    background-color: #363636;
+}
+.fanadesh .title h2{
+    text-align: center;
+    font-family: var(--karla);
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.fanadesh__content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+}
+.fanadesh__item h2{
+    color: #fff;
+    font-family: var(--sanspro);
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+.fanadesh__item p{
+    color: #fff;
+    font-family: var(--sanspro);
+    font-size: 0.9rem;
+}
+.fanadesh__item input[type="text"]{
+    width: 100%;
+    height: 25%;
+    border: 0;
+    outline: none;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.fanadesh__item input[type="submit"]{
+    width: 50%;
+    height: 25%;
+    border: 0;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #FDD31D;
+    color: #fff;
+}
+.fanadesh hr{
+    margin-top: 5rem;
+}
+.social__png{
+    margin-left: 30%;
+}
+.social__png img{
+    margin-top: 2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.footer{
+    width: 100%;
+    padding: 2.8rem;
+    background-color: #D8B109;
+}
+.footer p{
+    color: #fff;
+    text-align: center;
+    font-family: var(--ubuntu);
+    font-size: 1.2rem;
+}
